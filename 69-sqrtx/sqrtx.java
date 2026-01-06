@@ -1,6 +1,6 @@
 class Solution {
     public int mySqrt(int x) {
-        int low=1;
+          int low=1;
         int high=x;
 
         while(low<=high){
