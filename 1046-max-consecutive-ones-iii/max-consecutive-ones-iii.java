@@ -10,7 +10,7 @@ class Solution {
         while(right<n){
             if(nums[right]==0) zeros++;
 
-            if(zeros > k){
+            while(zeros > k){
                 if(nums[left] == 0) zeros--;
                 left++;
             }
