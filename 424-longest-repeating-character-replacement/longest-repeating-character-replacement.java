@@ -9,10 +9,15 @@ class Solution {
 
         int[] freq = new int[26];
         while(right < n){
+
+            //Add current character
             freq[s.charAt(right)-'A']++;
+
+            //After adding current character check the new maxfreq
             maxfreq = Math.max(maxfreq , freq[s.charAt(right)-'A']);
 
-            if(right - left +1 - maxfreq > k){
+            //if window is invalid shrink it
+            while(right - left +1 - maxfreq > k){
                 freq[s.charAt(left)-'A']--;
                 left++;
             }
