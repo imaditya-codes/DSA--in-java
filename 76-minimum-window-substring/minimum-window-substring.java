@@ -11,7 +11,7 @@ class Solution {
         int count = 0;
         int start = -1;
 
-        int[] freq = new int[128];
+        int[] freq = new int[256];
 
         for (char c : t.toCharArray()) {
             freq[c]++;
