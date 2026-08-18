@@ -22,7 +22,7 @@ class Solution {
                     (ch == '}' && top == '{') ||
                     (ch == ']' && top == '[')) {
 
-                    // valid pair, continue
+                        //continue
                 } 
                 else {
                     return false;
